@@ -2,10 +2,10 @@
     background-color: #006a71;
     font-size: 18px;
     color: black;
-    font-family: 'Cabin', sans-serif;
-    
-    
+    font-family: 'Cabin', sans-serif;    
 }
+
+
 /*---------------------------------  Header Styling -----------------------*/
 .header{
     width: 100%;
@@ -46,26 +46,31 @@
 
 .nav{
     text-align: center;
-    padding: 10px 0;
+    padding: 0;
 }
 
 .nav-items {
     list-style: none;
     margin-top: 0%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .nav-item {
     display: inline-block;
     background-color: #006a71;
     border-radius: 50px;
-    padding: 0.8rem;
+    padding: 5px;
     margin-left: 0.5rem;
     border: solid rgba(76, 252, 222, 0.945);
 }
+
 .nav-item:hover{
     background-color: white;
     border: solid black;
 }
+
 .nav-item a:hover{
     color: black;
 }
@@ -167,4 +172,40 @@
        to{
            transform: rotateX(360deg);
        }
+  }
+
+  /*------------------------------------------------   Media Quaries -------------------------------------------*/
+  @media (max-width: 1000px) {
+      .Logo-text {
+          display: flex;
+          position: relative;
+      }
+      #img-logo {
+          top: 5px;
+          right: 5px;
+          position: absolute;
+          max-width: 20%;
+      }
+       .header{
+           height: 30rem;
+           position: relative;
+       }
+      .nav-items{
+          position: absolute;
+          left: 0px;
+          top: 12%;
+          display: flex;
+          flex-direction: column;
+          float: left;
+          align-items: center;
+          margin-top: 5px;
+      }
+       .nav-item {
+          text-align: left;
+          margin: 10px;
+        
+      }
+      .footer{
+          height: 300px;
+      }
   }
