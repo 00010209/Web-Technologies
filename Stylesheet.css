@@ -186,10 +186,12 @@
           position: absolute;
           max-width: 20%;
       }
+
        .header{
            height: 30rem;
            position: relative;
        }
+
       .nav-items{
           position: absolute;
           left: 0px;
@@ -200,11 +202,15 @@
           align-items: center;
           margin-top: 5px;
       }
+
        .nav-item {
           text-align: left;
           margin: 10px;
-        
+       }
+      .img-why-travel{
+          max-width: 70%;
       }
+      
       .footer{
           height: 300px;
       }
