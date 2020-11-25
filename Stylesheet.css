@@ -10,7 +10,7 @@
 .header{
     width: 100%;
     margin: 0px;
-    height: 200px;
+    height: 25vh;
     border-radius: 10px;
     background-color: #ffffdd;
 }
@@ -22,7 +22,7 @@
 }
 
 #img-logo{
-    display: block;
+    display: inline-block;
     position: relative;
     float: left;
     max-width: 10%;
@@ -46,7 +46,7 @@
 
 .nav{
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .nav-items {
@@ -61,12 +61,12 @@
     padding: 0.8rem;
     margin-left: 0.5rem;
 }
-
 .nav-item:hover{
-    background-color: black;
+    background-color: white;
+    border: solid black;
 }
 .nav-item a:hover{
-    color: white;
+    color: black;
 }
 
 .nav-item > a {
