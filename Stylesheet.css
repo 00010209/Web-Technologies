@@ -60,6 +60,7 @@
     border-radius: 50px;
     padding: 0.8rem;
     margin-left: 0.5rem;
+    border: solid rgba(76, 252, 222, 0.945);
 }
 .nav-item:hover{
     background-color: white;
@@ -78,16 +79,16 @@
     font-size: 1.5em;
 } 
 
-.img-why-travel{
+.img-why-travel {
     max-width: 20%;
     border-radius: 10%;
     height: auto;
 }
 
-.img-why-travel:hover{
+.img-why-travel:hover {
     opacity: 0.8;
 }
-.intro-heading{
+.intro-heading {
     font-size: 2rem;
 }
 
@@ -95,11 +96,31 @@
     font-size: 1.5rem;
 }
 
-.why-travel-text{
+.why-travel-text {
     font-size: 1.5rem;
 }
 
-.footer{
+.flip-container {
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 500px;
+}
+
+.intro-heading {
+    font-size: 3.2rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+
+
+/*--------------------------------------------------------             Footer       -------------------------------------------------------*/
+.footer {
     background-color:#ffffdd;
 	margin: 10px;
 	height: 200px;
@@ -108,11 +129,11 @@
 	padding: 0.8rem;	
 }
 
-.footer-text{
+.footer-text {
     font-size: 1.4rem;
 }
 
-.acknowledgement{
+.acknowledgement {
     font-size: 1.3rem;
 }
 
@@ -133,4 +154,17 @@
     to {
       transform: rotate(-359deg);
     }
+  }
+
+  .intro-heading:hover {
+      animation: flipV  1s linear;
+  }
+
+  @keyframes flipV {
+      50%{
+          transform: rotateX(180deg);
+         }
+       to{
+           transform: rotateX(360deg);
+       }
   }
