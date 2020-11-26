@@ -95,6 +95,10 @@
 }
 .intro-heading {
     font-size: 2rem;
+    background-color: #fff;
+    border: solid 2px black;
+    border-radius: 30px;
+    padding: 10px;
 }
 
 .intro-info {
@@ -190,6 +194,7 @@
        .header{
            height: 30rem;
            position: relative;
+           max-width: 100%;
        }
 
       .nav-items{
@@ -207,11 +212,55 @@
           text-align: left;
           margin: 10px;
        }
+
       .img-why-travel{
           max-width: 70%;
       }
-      
+
       .footer{
-          height: 300px;
+          height: auto;
       }
-  }
+    }
+
+
+    @media (max-width: 400px){
+        #img-logo{
+            display: none;
+        }
+    }
+
+
+
+    @media (max-width: 300px){
+        .Logo-text{
+            font-size: 0.7rem;
+        }
+        .intro-heading{
+            font-size: 2rem;
+            text-align: center;
+        } 
+
+        .intro-info{
+            font-size: 1rem;
+        }
+
+        .why-travel-heading{
+            font-size: 1.2rem;
+        }
+
+       .why-travel-text{
+           font-size: 1rem;
+       }
+
+        .nav-item{
+            font-size: 0.7rem;
+        }
+
+       .footer-box{
+           font-size: 0.5rem;
+       }
+       .footer{
+           margin-top: 15px;
+       }
+
+    }
