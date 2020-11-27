@@ -177,9 +177,33 @@
     padding: 50px;
     border-radius: 80px;
 }
-.news-heading{
-  
+
+.img-news:hover {
+    opacity: 0.7;
 }
+
+.news-heading > a {
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.news-heading > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.news-video-header{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+.iframe-container {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10%;
+}
+
 
 
 
@@ -206,8 +230,24 @@
     font-size: 1.3rem;
 }
 
+.news-video-box{
+    padding: 100px 0 0;
+}
 
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+    clear: both;
+}
 
+.iframe-container iframe{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
 
 
 
@@ -257,87 +297,97 @@
 
   /*------------------------------------------------   Media Quaries -------------------------------------------*/
 @media (max-width: 1000px) {
-      .Logo-text {
-          display: flex;
-          position: relative;
-      }
-      #img-logo {
-          top: 5px;
-          right: 5px;
-          position: absolute;
-          max-width: 20%;
-      }
+    .Logo-text {
+        display: flex;
+        position: relative;
+    }
+    #img-logo {
+        top: 5px;
+        right: 5px;
+        position: absolute;
+        max-width: 20%;
+    }
 
-       .header{
-           height: 30rem;
-           position: relative;
-           max-width: 100%;
-       }
+    .header{
+        height: 30rem;
+        position: relative;
+        max-width: 100%;
+    }
 
-      .nav-items{
-          position: absolute;
-          left: 0px;
-          top: 12%;
-          display: flex;
-          flex-direction: column;
-          float: left;
-          align-items: center;
-          margin-top: 5px;
-      }
-
-       .nav-item {
-          text-align: left;
-          margin: 10px;
-       }
-
-      .img-why-travel{
-          max-width: 70%;
+    .nav-items{
+        position: absolute;
+        left: 0px;
+        top: 12%;
+        display: flex;
+        flex-direction: column;
+        float: left;
+        align-items: center;
+        margin-top: 5px;
       }
 
-      .footer{
-          height: auto;
-      }
+    .nav-item {
+        text-align: left;
+        margin: 10px;
+    }
+
+    .img-why-travel{
+        max-width: 70%;
+    }
+
+    .footer{
+        height: auto;
+    }
+
+    .news-heading1{
+          font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 600px){
+        .news-heading1{
+            font-size: 1.5rem;
+            letter-spacing: 0;
+        }
+
+@media (max-width: 400px){
+    #img-logo{
+        display: none;
+        }
+
 }
 
 
-    @media (max-width: 400px){
-        #img-logo{
-            display: none;
-        }
+
+@media (max-width: 300px){
+    .Logo-text{
+        font-size: 0.7rem;
+    }
+    .intro-heading{
+        font-size: 2rem;
+        text-align: center;
+    } 
+
+    .intro-info{
+        font-size: 1rem;
     }
 
-
-
-    @media (max-width: 300px){
-        .Logo-text{
-            font-size: 0.7rem;
-        }
-        .intro-heading{
-            font-size: 2rem;
-            text-align: center;
-        } 
-
-        .intro-info{
-            font-size: 1rem;
-        }
-
-        .why-travel-heading{
-            font-size: 1.2rem;
-        }
-
-       .why-travel-text{
-           font-size: 1rem;
-       }
-
-        .nav-item{
-            font-size: 0.7rem;
-        }
-
-       .footer-box{
-           font-size: 0.5rem;
-       }
-       .footer{
-           margin-top: 15px;
-       }
-
+    .why-travel-heading{
+        font-size: 1.2rem;
     }
+
+    .why-travel-text{
+        font-size: 1rem;
+    }
+
+    .nav-item{
+        font-size: 0.7rem;
+    }
+
+    .footer-box{
+        font-size: 0.5rem;
+    }
+    .footer{
+        margin-top: 15px;
+    }
+
+}
