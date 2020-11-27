@@ -344,16 +344,40 @@
 }
 
 @media (max-width: 600px){
-        .news-heading1{
-            font-size: 1.5rem;
-            letter-spacing: 0;
-        }
+    .news-heading1{
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+
+    .news-heading  a{
+        font-size: 1rem;
+    }
+
+    .img-news{
+        max-width: 50%;
+    }
+
+    .news-box{
+        
+        padding-left: 0;
+    }
+    .box-content{
+        margin-top: 30px;
+    }
+    .box-content img{
+        border-radius: 10%;
+        padding: 0;
+        margin-right: 20px;
+    }
+    .news-video-header{
+        font-size: 1.3rem;
+    }
+}
 
 @media (max-width: 400px){
     #img-logo{
         display: none;
-        }
-
+    }
 }
 
 
