@@ -111,6 +111,58 @@
 
 
 
+/*----------------------------------------- CSS Animations ---------------------------*/
+#img-logo {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+
+  .intro-heading:hover {
+      animation: flipV  1s linear;
+  }
+
+@keyframes flipV {
+      50%{
+          transform: rotateX(180deg);
+         }
+       to{
+           transform: rotateX(360deg);
+       }
+}
+
+@keyframes text {
+    0%{
+        color: white;
+        margin-bottom: -40px;
+    }
+    30% {
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -160,4 +212,20 @@
         display: none;
     }
 }
+
+@media (max-width: 300px){
+    .Logo-text{
+        font-size: 0.7rem;
+    }
+
+    .nav-item{
+        font-size: 0.7rem;
+    }
+
+    .footer-box{
+        font-size: 0.5rem;
+    }
     
+    .footer{
+        margin-top: 15px;
+    }
