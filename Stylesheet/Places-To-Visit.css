@@ -43,3 +43,33 @@
     border: 4px solid #fff;
     transition: all 0.2s ease-in;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------         Media Queries          ---------------------------------------*/
+@media (max-width: 600px){
+   .explore-img{
+        max-width: 100%;
+    }
+
+    @media (max-width: 400px){
+        .explore-heading1{
+            font-size: 1.3rem;
+        }
+
+        .explore-text{
+            font-size: 1rem;
+        }
