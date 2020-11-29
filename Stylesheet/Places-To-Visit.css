@@ -44,6 +44,12 @@
     transition: all 0.2s ease-in;
 }
 
+.country-img:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 8px -5px rgba(50, 50, 50, 0.54);
+    opacity: 0.8;
+}
+
 
 
 
