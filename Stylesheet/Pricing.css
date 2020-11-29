@@ -1,5 +1,5 @@
 
-.Pricing-header{
+.Pricing-heading{
     font-weight: 600;
     text-align: center;
     background-color: #16a085;
@@ -12,6 +12,29 @@
 .Pricing-header:hover{
     color: black;
 }
+
+
+.announcement-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: #16a085;
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.announcement-text{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    max-width: 70%;
+    background-color: cornsilk;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 
 hr{
     border: solid white;
