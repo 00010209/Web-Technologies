@@ -1,0 +1,129 @@
+
+.Pricing-header{
+    font-weight: 600;
+    text-align: center;
+    background-color: #16a085;
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 10px 0px;
+    border-radius: 20px;
+}
+
+.Pricing-header:hover{
+    color: black;
+}
+
+hr{
+    border: solid white;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 900px;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0,)
+  
+}
+
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+
+tr:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0,)
+}
+
+td, th {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 2px solid black;
+}
+
+#table-header{
+    background-color: #16a085;
+    color: #fff;
+}
+
+
+
+
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    
+    table{
+        max-width: 60%;
+    }
+	
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+        left: -9999px;
+
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+        padding-left: 50%;
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 20%;
+		left: 6px;
+		width: 45%; 
+		padding-right: 0; 
+		white-space: nowrap;
+    }
+    
+    
+    
+   
+    
+	/*Label the data*/
+	td:nth-of-type(1):before { content: "Plan Name"; }
+	td:nth-of-type(2):before { content: "Country"; }
+    td:nth-of-type(3):before { content: "What's included"; }
+	td:nth-of-type(4):before { content: "Length"; }
+	td:nth-of-type(5):before { content: "Price"; }
+
+}
+
+@media (min-device-width: 400px) and (max-device-width: 500px) {
+
+    
+    table{
+        max-width: 80%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+
+    table{
+        max-width: 100%;
+    }
