@@ -1,0 +1,105 @@
+.main-content-headings{
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 0;
+    margin: 0;
+    position: relative;    
+}
+
+
+
+.main-content-headings h1{
+    padding: 0px;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content-headings h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+
+.main-content-headings h1:nth-child(2){
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+    
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.activity-text{
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.activity-img{
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    clear: both;
+    margin: 10px auto;
+    border-radius: 5%;
+}
+
+.activity-img:hover{
+    opacity: 0.8;
+}
+
+hr{
+    border: solid  white;
+    margin: 0 100px;
+}
+
+
+
+
+
+/*---------------------------------------------------    Media Quaries   ---------------------------------*/
+@media (max-width: 400px){
+    .main-content-headings h1{
+        font-size: 5rem;
+    }
+
+    .activity-img{
+        max-width: 80%;
+    }
+
+    .activity-text{
+        font-size: 1rem;
+        margin-left: 5%;
+        padding: 5px;
+    }
+
+
+
+    h2{
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+
+/*---------------------------------------------------       Animation   ---------------------------------*/
+@keyframes animate
+{
+    0%,100%{
+        clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+}
