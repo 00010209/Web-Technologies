@@ -6,7 +6,7 @@
      <title>Travel4Fun</title>
      <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Piazzolla:ital@1&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="Stylesheet/Navigation.css">
-     <link rel="stylesheet" href="Stylesheet/Things-To-Do.css">
+     <link rel="stylesheet" href="Stylesheet/Contact-Us.css">
   </head>
 
 <!----------------------------------------------             LOGO             ------------------------------------------------------->
@@ -55,14 +55,73 @@
 
 
 <!-------------------------------------------------                Main Part           ------------------------------------------------------->
-    <section class="main-content">
-        <div class="animated-text">Welcome</div>
-        <div class="animated-text">Get Ready</div>
-        <div class="animated-text">To Travel</div>
-        <div class="animated-text">It'll be</div>
-        <div class="animated-text">So much Fun </div>
-        
+
+
+   <hr>
+
+    <section class="contact-us-box">
+      <h2>Contact Us</h2>
+        <section class="row100">
+
+            <section class="col">
+                <section class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span class="text">First Name</span>
+                    <span class="line"></span>
+                </section>
+            </section>
+
+            <section class="col">
+                <section class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span class="text">Last Name</span>
+                    <span class="line"></span>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="row100">
+            <section class="col">
+                <section class="inputbox" id="form">
+                    <input type="text" name="" required="required" id="email" onkeydown="validation()">
+                    <span class="text">Email</span>
+                    <span class="line" id="text"></span>
+                </section>
+            </section>
+
+            <section class="col">
+                <section class="inputbox">
+                    <input type="text" name="" required="required">
+                    <span class="text">Mobile</span>
+                    <span class="line"></span>
+                </section>
+            </section>
+
+            <section class="row100">
+                <section class="col">
+                    <section class="inputbox textarea">
+                        <textarea required="required"></textarea>
+                        <span class="text">Type your message here...</span>
+                        <span class="line"></span>
+                    </section>
+                </section>
+            </section>
+
+        <section class="row100">
+            <section class="col">
+                <input type="submit" value="Send">
+            </section>
+          </section>
+
+        </section>
     </section>
+
+    <hr>
+
+   
+
+    <h3>Thank you for contacting us, we will reply as soon as possible.</h3>
 
 
 
@@ -72,14 +131,16 @@
 <!--------------------------------------------------                FOOTER                      ------------------------------------------------->
 <footer class="footer">
     <section class="footer-box">
-       <p class="footer-text">If you have any questions, please visit Contact Us page.</p>
-
        <p class="acknowledgement">
            This website was created solely for the purpose of fulfilling Web Technology module's requirements 
            and does not represent any actual company or service.
        </p>
     </section>
-  </footer>
+</footer>
+
+
+
+<script src="JavaScript/Form.js" type="text/javascript"></script>
 
  </body>
 </html>
