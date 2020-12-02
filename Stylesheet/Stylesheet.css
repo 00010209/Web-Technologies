@@ -101,9 +101,12 @@
 /*--------------------------------------------        Main Section                ------------------------------------*/
 
 .img-why-travel {
-    max-width: 20%;
+    display: block;
+    max-width: 50%;
     border-radius: 10%;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .img-why-travel:hover {
@@ -375,6 +378,25 @@
         font-size: 1.3rem;
     }
 }
+
+@media (max-width: 400px)
+{
+    .why-travel-text{
+        font-size: 1rem;
+    }
+
+    .why-travel-heading{
+        font-size: 1.1rem;
+    }
+
+    .intro-info{
+        font-size: 1.2rem;
+    }
+
+    .intro-heading{
+        font-size: 2rem;
+        text-align: center;
+    }
 
 @media (max-width: 400px){
     #img-logo{
