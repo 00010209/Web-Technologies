@@ -158,15 +158,27 @@ h3{
 }
 
 #text{
+    margin-bottom: 30px;
+    max-width: 150px;
+    left: 100px;
     background-color: #fff;
-    margin-bottom: -40px;
-    padding: 0;
-    z-index: 1000;
 }
 
 #form{
-    background-color: #45f3ff;
+    /*background-color: #45f3ff;*/
+    background-color: #fff;
+    border-bottom: solid 2px #45f3ff ;
     max-width: 70%;
+}
+
+#email:focus,
+#email:valid
+{
+    background-color: #45f3ff;
+    transition: 0.5s;
+    width: 97%;
+    pointer-events: none;
+    border-radius: 2px;
 }
 
 
