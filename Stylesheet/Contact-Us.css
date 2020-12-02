@@ -143,6 +143,11 @@ input[type="submit"]
     border-radius: 4px;
 }
 
+input[type="submit"]:hover{
+    background-color: #000;
+    color: #fff;
+    transition: 0.8s;
+}
 
 hr{
     margin: 100px;
@@ -177,7 +182,6 @@ h3{
     background-color: #45f3ff;
     transition: 0.5s;
     width: 97%;
-    pointer-events: none;
     border-radius: 2px;
 }
 
@@ -185,6 +189,41 @@ h3{
 
 
 /*-----------------------------------------------    Media Quaries   --------------------------------*/
+@media (max-width: 600px){
+
+    #text{
+        left: 70px;
+        width: 160px;
+        
+    }
+
+}
+@media (max-width: 500px){
+
+    .contact-us-box .row100 .inputbox .text {
+        font-size: 1rem;
+    }
+    
+    #text{
+        left: 60px;
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .contact-us-box .row100 .inputbox input,
+    .contact-us-box .row100 .inputbox.textarea textarea{
+        font-size: 0.9rem;
+    }
+
+    #email:focus,
+    #email:valid{
+        max-width: 90%;
+    }
+
+
+
+}
+
 @media (max-width: 300px){
     .contact-us-box{
         max-width: 100%;
