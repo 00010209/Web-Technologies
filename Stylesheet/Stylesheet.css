@@ -140,6 +140,7 @@
     perspective: 500px;
 }
 
+/*--------------------------------------------        News Page Properties                ------------------------------------*/
 .news-container{
     text-align: center;
     position: relative;
@@ -208,13 +209,6 @@
 }
 
 
-
-
-
-
-
-
-
 /*--------------------------------------------------------             Footer       -------------------------------------------------------*/
 .footer {
     background-color:#ffffdd;
@@ -227,6 +221,22 @@
 
 .footer-text {
     font-size: 1.4rem;
+}
+
+.report-link{
+    color:#000;
+    text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+
+.report-link:hover{
+    color: green;
+}
+
+.report-link:visited{
+    text-decoration: none;
 }
 
 .acknowledgement {
